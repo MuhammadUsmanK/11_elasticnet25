@@ -225,7 +225,8 @@ weather_recipe
 Now that we have our recipe ready, we **need to apply it** to the training data in a process called prepping:
 
 ```{r weather_prep}
-weather_prep 
+weather_prep <- weather_recipe %>%
+  prep()
 
 weather_prep
 ```
